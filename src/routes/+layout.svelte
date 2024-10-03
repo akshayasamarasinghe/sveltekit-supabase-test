@@ -3,14 +3,14 @@
 </script>
 
 <div class="flex justify-between">
-	<div class="w-4/12 nav-bar flex justify-center text-center" id="logo">
-		<p>Vibes</p>
+	<div class="w-4/12 h-24 nav-bar flex justify-center text-center" id="logo">
+		<p>THE`_ViBES</p>
 	</div>
 	<nav class="flex nav-bar items-center w-8/12">
-		<a class="nav-link px-10 py-6" href="/">Home</a>
-		<a class="nav-link px-10 py-6" href="/products">Products</a>
-		<a class="nav-link px-10 py-6" href="/about">About</a>
-		<a class="nav-link px-10 py-6" href="/settings">Settings</a>
+		<a class="h-24 nav-link px-10 py-6" href="/">Home</a>
+		<a class="h-24 nav-link px-10 py-6" href="/products">Products</a>
+		<a class="h-24 nav-link px-10 py-6" href="/about">About</a>
+		<a class="h-24 nav-link px-10 py-6" href="/settings">Settings</a>
 	</nav>
 </div>
 
@@ -20,6 +20,8 @@
 
 <style>
     .nav-link {
+				display: flex;
+				align-items: center;
         color: black;
         font-size: 1rem;
         font-weight: 600;
@@ -34,7 +36,7 @@
 
     .nav-link:hover {
         color: black;
-        font-size: 1rem;
+        font-size: 1.1rem;
         font-weight: 600;
         background-color: rgb(177, 223, 177);
         cursor: pointer;

@@ -5,8 +5,10 @@
 </script>
 
 <div class="flex justify-between items-center">
-	<p class="px-2 py-3 text-5xl font-bold">Products</p>
-	<button class="border-2 hover:bg-gray-100 rounded-lg px-2 py-1" on:click={() => goto("/add-edit-product")}>Add Product</button>
+	<p class="px-2 py-9 text-gray-600 text-5xl font-bold">Products</p>
+	<button class="border-2 hover:bg-gray-100 rounded-lg px-2 py-1" on:click={() => goto("/add-edit-product")}>Add
+		Product
+	</button>
 </div>
 
 <div class="grid grid-cols-4 gap-3 px-2">
@@ -23,8 +25,9 @@
 					<p class="text-md">$ {product.price}</p>
 				</div>
 				<div class="flex gap-2 justify-between">
-					<button class="border-2 hover:bg-gray-100 rounded-lg px-2 py-1" on:click={() => goto(`/products/${product.id}`)}>View</button>
-					<button class="border-2 hover:bg-gray-100 rounded-lg px-2 py-1">Add to cart</button>
+					<button class="border-2 hover:bg-gray-100 rounded-lg px-2 py-1"
+									on:click={() => goto(`/products/${product.id}`)}>View
+					</button>
 				</div>
 			</div>
 		{/each}

@@ -20,11 +20,11 @@
 </script>
 
 <div class="flex justify-between items-center">
-	<p class="px-2 py-3 text-5xl font-bold">{title} {selectedProduct ? ` - ${selectedProduct?.name}` : ""}</p>
+	<p class="px-2 py-9 text-gray-600 text-5xl font-bold">{title} {selectedProduct ? ` - ${selectedProduct?.name}` : ""}</p>
 </div>
 
 <div class="flex">
-	<form class="w-1/2 p-3 rounded-lg border-2" method="post"
+	<form class="w-1/2 p-3 bg-[#E5FFE5] rounded-lg border-2" method="post"
 				use:enhance={({ formData }) => {
 					formData.set('name', name);
 					formData.set('code', code);
